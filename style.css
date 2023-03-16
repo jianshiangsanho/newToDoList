@@ -70,8 +70,8 @@
   padding: 10px;
   background-color: #262e4c;
   border-bottom: 1px solid #3a4674;
-  white-space: pre-wrap;
   word-wrap: break-word;
+  word-break: break-all;
 }
 
 .check {
@@ -91,11 +91,16 @@
 .task {
   font-size: 18px;
   padding: 0 10px;
-  width: 80%;
+  width: 90%;
   background: transparent;
   border: none;
   color: #fff;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
+
+
+
 
 .task:focus {
   outline: none;
