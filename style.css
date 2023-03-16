@@ -1,8 +1,8 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
 
 * {
-  margin: 0;
-  box-sizing: border-box; /* 讓 padding 不會影響元素的寬度 */
+  margin: 0
 }
 
 .container {
@@ -11,7 +11,7 @@
   align-items: center;
   padding-top: 50px;
   background-color: #e1e3ea;
-  min-height: 100vh; /* 讓背景色填滿整個頁面 */
+  height: 100vh;
   font-family: sans-serif;
 }
 
@@ -19,7 +19,7 @@
   width: 60%;
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
   .app {
     width: 90%;
   }
@@ -30,7 +30,7 @@
   font-size: 40px;
   padding: 10px 0;
   text-align: center;
-  border-radius: 0.5rem 0.5rem 0 0;
+  border-radius: .5rem .5rem 0 0;
   background-color: #de3f53;
   font-family: "Rajdhani", sans-serif;
 }
@@ -60,19 +60,55 @@
   width: 10%;
 }
 
-ul {
+.app ul {
   list-style: none;
+  color: #e0e0e0;
   padding: 0;
-  margin: 0;
-  width: 100%;
 }
 
-li {
-  width: 100%;
-  margin: 10px 0;
-  background-color:  #3c4979;
-  border: 1px solid #ccc;
+.app ul li {
   padding: 10px;
-  box-sizing: border-box;
-  word-wrap: break-word; /* 讓長文字自動換行 */
+  background-color: #262e4c;
+  border-bottom: 1px solid #3a4674;
+}
+
+.check {
+  width: 0.8em;
+  height: 0.8em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid rgb(255, 255, 255);
+ 
+}
+
+.check:checked {
+  background-color: #1dd2af;
+}
+
+.task {
+  font-size: 18px;
+  padding: 0 10px;
+  width: 80%;
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.task:focus {
+  outline: none;
+}
+
+.app ul li i {
+  float: right;
+  cursor: pointer;
+}
+
+.app ul li i:hover {
+  color: rgb(255, 82, 82);
+}
+
+.completed {
+  color: rgba(192, 192, 192, 0.8);
+  text-decoration: line-through;
 }
