@@ -2,11 +2,7 @@
 
 * {
   margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
+  box-sizing: border-box; /* 讓 padding 不會影響元素的寬度 */
 }
 
 .container {
@@ -15,14 +11,15 @@ body {
   align-items: center;
   padding-top: 50px;
   background-color: #e1e3ea;
-  min-height: 100vh;
+  min-height: 100vh; /* 讓背景色填滿整個頁面 */
+  font-family: sans-serif;
 }
 
 .app {
   width: 60%;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .app {
     width: 90%;
   }
@@ -33,7 +30,7 @@ body {
   font-size: 40px;
   padding: 10px 0;
   text-align: center;
-  border-radius: .5rem .5rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
   background-color: #de3f53;
   font-family: "Rajdhani", sans-serif;
 }
@@ -42,7 +39,6 @@ body {
   display: flex;
   width: 100%;
   background-color: #262e4c;
-  margin-bottom: 20px;
 }
 
 .app form input {
@@ -64,60 +60,19 @@ body {
   width: 10%;
 }
 
-.app ul {
-  display: flex;
-  flex-wrap: wrap;
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
   width: 100%;
 }
 
-.app li {
-  flex: 1 0 200px;
-  background-color: #3c4979;
-  margin: 10px;
+li {
+  width: 100%;
+  margin: 10px 0;
+  background-color:  #3c4979;
   border: 1px solid #ccc;
   padding: 10px;
   box-sizing: border-box;
-}
-
-.check {
-  width: 0.8em;
-  height: 0.8em;
-  cursor: pointer;
-  border-radius: 50%;
-  background-color: white;
-  border: 1px solid rgb(255, 255, 255);
-}
-
-.check:checked {
-  background-color: #1dd2af;
-}
-
-.task {
-  font-size: 18px;
-  padding: 0 10px;
-  width: 100%;
-  background: transparent;
-  border: none;
-  color: #fff;
-}
-
-.task:focus {
-  outline: none;
-}
-
-.app li i {
-  float: right;
-  cursor: pointer;
-}
-
-.app li i:hover {
-  color: rgb(255, 82, 82);
-}
-
-.app li.completed {
-  color: rgba(192, 192, 192, 0.8);
-  text-decoration: line-through;
+  word-wrap: break-word; /* 讓長文字自動換行 */
 }
