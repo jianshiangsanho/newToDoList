@@ -70,6 +70,8 @@
   padding: 10px;
   background-color: #262e4c;
   border-bottom: 1px solid #3a4674;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .check {
