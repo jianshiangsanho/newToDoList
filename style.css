@@ -95,6 +95,7 @@
   background: transparent;
   border: none;
   color: #fff;
+  overflow-wrap: break-word; /* 斷字換行 */
   white-space: pre-wrap;
   word-wrap: break-word;
 }
